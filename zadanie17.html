@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>Canvas</title>
+ <script type="text/javascript">
+ function rysuj() {
+ var rysowanie = document.getElementById('obrazek');
+ var rodzaj = rysowanie.getContext('2d');
+rodzaj.beginPath();
+rodzaj.moveTo(50,250);
+rodzaj.quadraticCurveTo(5,110,150,250);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+rodzaj.fillStyle = "green";
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(50,250);
+rodzaj.quadraticCurveTo(5,350,150,250);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+rodzaj.fillStyle = "green";
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(250,250);
+rodzaj.quadraticCurveTo(300,110,150,250);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+rodzaj.fillStyle = "green";
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(250,250);
+rodzaj.quadraticCurveTo(300,350,150,250);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+rodzaj.fillStyle = "green";
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(150,250);
+rodzaj.quadraticCurveTo(250,90,150,140);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+rodzaj.fillStyle = "green";
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(150,250);
+rodzaj.quadraticCurveTo(50,90,150,140);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+rodzaj.fillStyle = "green";
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(150,250);
+rodzaj.quadraticCurveTo(250,400,150,350);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+rodzaj.fillStyle = "green";
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(150,250);
+rodzaj.quadraticCurveTo(50,400,150,350);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+rodzaj.fillStyle = "green";
+rodzaj.fill();
+
+
+ }
+ </script>
+</head>
+<body onload="rysuj();">
+ <canvas id="obrazek" width="600" height="600">
+ Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+ </canvas>
+</body>
+</html>
